@@ -10,7 +10,17 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::group(array('prefix' => 'api'), function()
+{
+
+  Route::get('/', function () {
+      return response()->json(['message' => 'Students and Schools API', 'status' => 'Connected']);;
+  });
+
+  Route::resource('students', 'StudentsController');
+  Route::resource('schools', 'SchoolsController');
+});
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('api');
 });
