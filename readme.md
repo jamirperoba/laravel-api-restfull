@@ -17,9 +17,9 @@ Coloque o projeto dentro do diretório que esta rodando seu localhost
 
 ## Exemplos
 
-Para testar pode utilizar o https://www.getpostman.com/
+Para testar foi utilizado o https://www.getpostman.com/
 
-###verbo GET /ID 
+### verbo GET /ID 
 Listar todos os registros
 ```
 http://localhost/laravel-api-restfull/public/api/students/
@@ -27,7 +27,7 @@ http://localhost/laravel-api-restfull/public/api/students/
 http://localhost/laravel-api-restfull/public/api/schools
 ```
 
-###verbo GET 
+### verbo GET 
 Listar apenas um registro
 ```
 http://localhost/laravel-api-restfull/public/api/students/1
@@ -35,7 +35,7 @@ http://localhost/laravel-api-restfull/public/api/students/1
 http://localhost/laravel-api-restfull/public/api/schools/1
 ```
 
-###verbo POST 
+### verbo POST 
 Inserir registros
 ```
 http://localhost/laravel-api-restfull/public/api/students/
@@ -56,7 +56,7 @@ http://localhost/laravel-api-restfull/public/api/schools/
 	"address": "endereco exemplo novo"
 }
 ```
-###verbo PUT /ID
+### verbo PUT /ID
 Editar registro especifico
 ```
 http://localhost/laravel-api-restfull/public/api/schools/1
@@ -69,7 +69,7 @@ http://localhost/laravel-api-restfull/public/api/schools/1
 }
 ```
 
-###verbo DELETE
+### verbo DELETE
 Editar registro especifico
 ```
 http://localhost/laravel-api-restfull/public/api/students/1
