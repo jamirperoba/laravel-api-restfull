@@ -16,10 +16,14 @@ Route::group(array('prefix' => 'api'), function()
   Route::get('/', function () {
       return response()->json(['message' => 'Students and Schools API', 'status' => 'Connected']);;
   });
+  Route::get('/client', function () {
+  	return view('client');
+  });
 
   Route::resource('students', 'StudentsController');
   Route::resource('schools', 'SchoolsController');
 });
+
 
 Route::get('/', function () {
     return redirect('api');
